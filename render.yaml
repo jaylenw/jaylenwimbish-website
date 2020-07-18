@@ -1,0 +1,13 @@
+# A static site
+services:
+    - type: web
+      name: jaylenwimbish-website
+      env: static
+      buildCommand: test -f site/index.html # test if index.html exists
+      staticPublishPath: ./site
+      pullRequestPreviewsEnabled: true     # we want pr previews
+      headers:
+      - path: /*
+        name: X-Frame-Options
+        value: sameorigin
+      autoDeploy: true
