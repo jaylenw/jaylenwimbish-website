@@ -2,6 +2,13 @@ version: "3.8"
 
 services:
     website:
-        build: . # build using the DockerFile in the same directory
+        build: 
+            context: . # build using the DockerFile in the same directory
+            args:
+                - myUserID # obtain the argument value from .env and provide it to the docker build time
         image: jaylenwimbish/website-localdev:latest # tage the time with the specified name and tag
         container_name: jay-website-localdev
+        volumes:
+            - ./app:/home/dev/app # bind mount from our dev folder to the dev folder in the container
+        ports:
+            - "3000:3000" # publish port 3000 on the container and map it to the host
