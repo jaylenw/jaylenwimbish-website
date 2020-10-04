@@ -1,4 +1,5 @@
 # jaylenwimbish-website
+
 My personal website.
 
 ## Local Development
@@ -11,7 +12,7 @@ My personal website.
 
 3.) Create the `.env` file and provide the expected values. Run `id -u` to obtain your user id.
 
-```
+```bash
 # set your user id for the local development
 myUserID=
 ```
