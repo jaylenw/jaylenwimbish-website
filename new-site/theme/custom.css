@@ -12,3 +12,20 @@
       font-size: 3.5rem;
     }
   }
+
+  .portrait {
+    border-radius: 100%;
+    overflow: hidden;
+    max-width: 40%;
+    max-height: 40%;
+    margin: 0 auto;
+  }
+
+  .portrait img {
+    display: block;
+    /* Stretch
+    height: 100%;
+    width: 100%; */
+    max-width: 100%;
+    max-height: 100%;
+  }
