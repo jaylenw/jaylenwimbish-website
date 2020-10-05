@@ -41,4 +41,7 @@
   .custom-lead {
     margin-top: 1rem;
   }
-  
+
+  .custom-cover-heading {
+    font-weight: bold;
+  }
